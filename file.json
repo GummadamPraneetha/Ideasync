@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-08-06T16:00:00Z",
+  "ideas": [
+    {
+      "id": "idea-001",
+      "title": "AI Crime Detection",
+      "description": "Detect suspicious human movement using AI and automatically alert the nearest police station with the location and captured evidence.",
+      "status": "In Progress",
+      "createdAt": "2026-08-06T13:00:00Z",
+      "updatedAt": "2026-08-06T15:45:00Z"
+    },
+    {
+      "id": "idea-002",
+      "title": "Expense Tracker",
+      "description": "Track daily expenses by scanning bills using OCR and generate monthly spending reports.",
+      "status": "Completed",
+      "createdAt": "2026-08-05T10:00:00Z",
+      "updatedAt": "2026-08-05T18:00:00Z"
+    },
+    {
+      "id": "idea-003",
+      "title": "Smart Attendance System",
+      "description": "Use face recognition to automatically mark attendance for students and employees.",
+      "status": "New",
+      "createdAt": "2026-08-06T09:30:00Z",
+      "updatedAt": "2026-08-06T09:30:00Z"
+    },
+    {
+      "id": "idea-004",
+      "title": "Crop Disease Detection",
+      "description": "Identify crop diseases from leaf images using machine learning and recommend suitable treatments.",
+      "status": "On Hold",
+      "createdAt": "2026-08-04T14:20:00Z",
+      "updatedAt": "2026-08-06T11:00:00Z"
+    },
+    {
+      "id": "idea-005",
+      "title": "IdeaSync",
+      "description": "A web and mobile application that allows users to capture ideas anytime and automatically synchronize them using a shared JSON file without a custom backend.",
+      "status": "In Progress",
+      "createdAt": "2026-08-06T12:00:00Z",
+      "updatedAt": "2026-08-06T15:30:00Z"
+    },
+    {
+      "id": "idea-006",
+      "title": "Personal Health Reminder",
+      "description": "Remind users to take medicines, drink water, and complete daily health activities.",
+      "status": "New",
+      "createdAt": "2026-08-03T08:00:00Z",
+      "updatedAt": "2026-08-03T08:00:00Z"
+    },
+    {
+      "id": "idea-007",
+      "title": "Library Management System",
+      "description": "Manage books, issue and return records, and student borrowing history digitally.",
+      "status": "Completed",
+      "createdAt": "2026-08-01T11:15:00Z",
+      "updatedAt": "2026-08-02T16:30:00Z"
+    },
+    {
+      "id": "idea-008",
+      "title": "Smart Parking Finder",
+      "description": "Help users locate available parking spaces in real time using IoT sensors.",
+      "status": "New",
+      "createdAt": "2026-08-06T07:45:00Z",
+      "updatedAt": "2026-08-06T07:45:00Z"
+    }
+  ]
+}
