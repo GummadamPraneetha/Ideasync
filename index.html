@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdeaSync - GitHub Repository Backendless Idea Manager</title>
+  <meta name="description" content="Backendless idea note taking and synchronization application using GitHub Repository as storage.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light-grey">
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="logo-area">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.66 16.03a5 5 0 1 1 4.68-2.63M12 18v2m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+            <path d="M12 2v2"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">IdeaSync</span>
+          <span class="brand-tag">GitHub Storage</span>
+        </div>
+      </a>
+
+      <!-- Sync Status Indicator Pill -->
+      <div class="sync-status-pill" id="sync-status-pill" onclick="window.ui.openGitHubModal()" title="Click to view GitHub Storage configuration">
+        <span class="sync-dot" id="sync-dot"></span>
+        <span id="sync-text">Checking Sync...</span>
+      </div>
+
+      <!-- Action Buttons & Theme Selector -->
+      <div class="header-actions">
+        <!-- Live Theme Switcher Dropdown -->
+        <select id="theme-selector" class="select-filter" style="padding:0.45rem 0.75rem; font-weight:600; font-size:0.8rem;" onchange="window.ui.setTheme(this.value)">
+          <option value="light-grey">🎨 Light Grey</option>
+          <option value="slate-grey">🌙 Slate Grey</option>
+          <option value="bright-white">☀️ Bright White</option>
+        </select>
+
+        <button class="btn btn-secondary" onclick="window.app.syncWithGitHub()" title="Sync with GitHub Repository">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+          <span class="btn-text-hide">Sync Now</span>
+        </button>
+
+        <button class="btn btn-secondary btn-icon" onclick="window.ui.openGitHubModal()" title="GitHub Connection Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-primary" onclick="window.ui.openNewIdeaModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>New Idea</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- Toolbar Section -->
+    <section class="toolbar-section">
+      <div class="toolbar-header">
+        <!-- Stats Group -->
+        <div class="stats-group">
+          <div class="stat-chip">Total Ideas: <span class="stat-value" id="stat-total">0</span></div>
+          <div class="stat-chip">New: <span class="stat-value" id="stat-new">0</span></div>
+          <div class="stat-chip">In Progress: <span class="stat-value" id="stat-progress">0</span></div>
+          <div class="stat-chip">Completed: <span class="stat-value" id="stat-completed">0</span></div>
+        </div>
+
+        <!-- View Switcher -->
+        <div class="view-toggle">
+          <button class="view-btn active" id="view-btn-grid" onclick="window.ui.switchView('grid')">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            Cards
+          </button>
+          <button class="view-btn" id="view-btn-kanban" onclick="window.ui.switchView('kanban')">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="5" height="18" rx="1"></rect><rect x="12" y="3" width="5" height="12" rx="1"></rect><rect x="21" y="3" width="5" height="8" rx="1"></rect></svg>
+            Kanban
+          </button>
+          <button class="view-btn" id="view-btn-json" onclick="window.ui.switchView('json')">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            JSON Code
+          </button>
+        </div>
+      </div>
+
+      <!-- Search & Status Filter Row -->
+      <div class="filter-row">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search ideas by title or description..." oninput="window.ui.handleSearch(this.value)">
+        </div>
+
+        <select id="sort-select" class="select-filter" onchange="window.ui.handleSort(this.value)">
+          <option value="updated">Sort by Recently Updated</option>
+          <option value="created">Sort by Date Created</option>
+          <option value="title">Sort by Title</option>
+        </select>
+      </div>
+
+      <!-- Status Filter Tabs -->
+      <div class="status-tabs" id="status-tabs">
+        <button class="status-tab active" onclick="window.ui.handleStatusFilter('All', this)">All</button>
+        <button class="status-tab" onclick="window.ui.handleStatusFilter('New', this)">New</button>
+        <button class="status-tab" onclick="window.ui.handleStatusFilter('In Progress', this)">In Progress</button>
+        <button class="status-tab" onclick="window.ui.handleStatusFilter('Completed', this)">Completed</button>
+        <button class="status-tab" onclick="window.ui.handleStatusFilter('On Hold', this)">On Hold</button>
+        <button class="status-tab" onclick="window.ui.handleStatusFilter('Archived', this)">Archived</button>
+      </div>
+    </section>
+
+    <!-- Dynamic Ideas Display Container -->
+    <section id="view-container">
+      <!-- Grid, Kanban, or JSON code will be rendered here dynamically -->
+    </section>
+
+  </main>
+
+  <!-- Mobile Floating Action Button (FAB) -->
+  <button class="fab-btn" onclick="window.ui.openNewIdeaModal()" title="Add New Idea">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+  </button>
+
+  <!-- Modal 1: Create / Edit Idea Modal -->
+  <div class="modal-overlay" id="idea-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="idea-modal-title">Add New Idea</h3>
+        <button class="modal-close" onclick="window.ui.closeModal('idea-modal')">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <form id="idea-form" onsubmit="window.ui.handleSaveIdea(event)">
+        <div class="modal-body">
+          <input type="hidden" id="idea-id">
+          
+          <div class="form-group">
+            <label class="form-label" for="idea-title-input">Title</label>
+            <input type="text" id="idea-title-input" class="form-input" placeholder="e.g. AI Crime Detection" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="idea-status-select">Status</label>
+            <select id="idea-status-select" class="form-select">
+              <option value="New">New</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+              <option value="On Hold">On Hold</option>
+              <option value="Archived">Archived</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="idea-desc-input">Description</label>
+            <textarea id="idea-desc-input" class="form-textarea" placeholder="Explain the concept, requirements, notes, or workflow details..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="window.ui.closeModal('idea-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Idea</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: GitHub Storage Config Modal -->
+  <div class="modal-overlay" id="github-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub Storage Settings
+        </h3>
+        <button class="modal-close" onclick="window.ui.closeModal('github-modal')">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <form id="github-form" onsubmit="window.ui.handleSaveGitHubConfig(event)">
+        <div class="modal-body">
+          <p class="form-hint" style="background:var(--bg-input); border-left:3px solid var(--primary-color); padding:0.75rem; border-radius:6px; color:var(--text-main);">
+            Target Repository: <strong>Danvikas09/Ideasync</strong>
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="gh-token">Personal Access Token (PAT)</label>
+            <input type="password" id="gh-token" class="form-input" placeholder="ghp_xxxxxxxxxxxxxxxxx or github_pat_xxxx" required>
+            <span class="form-hint">Requires <code>repo</code> or <code>contents: read/write</code> permissions. Token stays in your browser.</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <div class="form-group">
+              <label class="form-label" for="gh-owner">Repository Owner</label>
+              <input type="text" id="gh-owner" class="form-input" value="Danvikas09" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gh-repo">Repository Name</label>
+              <input type="text" id="gh-repo" class="form-input" value="Ideasync" required>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <div class="form-group">
+              <label class="form-label" for="gh-path">File Path</label>
+              <input type="text" id="gh-path" class="form-input" value="ideas.json" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gh-branch">Branch</label>
+              <input type="text" id="gh-branch" class="form-input" value="main" required>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="flex-wrap:wrap; justify-content:space-between; gap:0.5rem;">
+          <div style="display:flex; gap:0.5rem;">
+            <button type="button" class="btn btn-secondary" onclick="window.ui.testGitHubConnection()">Test Connection</button>
+            <button type="button" class="btn btn-primary" style="background:linear-gradient(135deg, #10b981, #059669);" onclick="window.ui.pushFullProjectToGitHub()">🚀 Push Full Project Code to Repo</button>
+          </div>
+          <div style="display:flex; gap:0.5rem;">
+            <button type="button" class="btn btn-secondary" onclick="window.app.syncWithGitHub(false)">Pull Data</button>
+            <button type="submit" class="btn btn-primary">Save & Push Data</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/github-sync.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Page Wiring Script -->
+  <script>
+    // Initialize UI Handlers & Bind Events
+    document.addEventListener('DOMContentLoaded', () => {
+      // Theme Manager
+      window.ui.setTheme = function(themeName) {
+        document.body.setAttribute('data-theme', themeName);
+        localStorage.setItem('ideasync_theme', themeName);
+        const sel = document.getElementById('theme-selector');
+        if (sel) sel.value = themeName;
+      };
+
+      const savedTheme = localStorage.getItem('ideasync_theme') || 'light-grey';
+      window.ui.setTheme(savedTheme);
+
+      // Wire view switcher
+      window.ui.switchView = function(viewName) {
+        window.app.currentView = viewName;
+        document.querySelectorAll('.view-btn').forEach(btn => btn.classList.remove('active'));
+        const activeBtn = document.getElementById(`view-btn-${viewName}`);
+        if (activeBtn) activeBtn.classList.add('active');
+        window.app.render();
+      };
+
+      // Wire Search & Sort
+      window.ui.handleSearch = function(val) {
+        window.app.searchQuery = val;
+        window.app.render();
+      };
+
+      window.ui.handleSort = function(val) {
+        window.app.sortBy = val;
+        window.app.render();
+      };
+
+      // Wire Status Filter Tabs
+      window.ui.handleStatusFilter = function(status, btnEl) {
+        window.app.activeFilter = status;
+        document.querySelectorAll('.status-tab').forEach(b => b.classList.remove('active'));
+        if (btnEl) btnEl.classList.add('active');
+        window.app.render();
+      };
+
+      // Handle Save Idea form submit
+      window.ui.handleSaveIdea = function(e) {
+        e.preventDefault();
+        const id = document.getElementById('idea-id').value;
+        const title = document.getElementById('idea-title-input').value;
+        const desc = document.getElementById('idea-desc-input').value;
+        const status = document.getElementById('idea-status-select').value;
+
+        if (id) {
+          window.app.updateIdea(id, title, desc, status);
+          window.ui.showToast('Idea updated successfully!', 'success');
+        } else {
+          window.app.addIdea(title, desc, status);
+          window.ui.showToast('New idea saved!', 'success');
+        }
+
+        window.ui.closeModal('idea-modal');
+      };
+
+      // Handle GitHub Config form submit
+      window.ui.handleSaveGitHubConfig = function(e) {
+        e.preventDefault();
+        const config = {
+          token: document.getElementById('gh-token').value,
+          owner: document.getElementById('gh-owner').value,
+          repo: document.getElementById('gh-repo').value,
+          path: document.getElementById('gh-path').value,
+          branch: document.getElementById('gh-branch').value
+        };
+
+        window.githubSync.saveConfig(config);
+        window.ui.closeModal('github-modal');
+        window.app.syncWithGitHub(true);
+      };
+
+      // Test GitHub Connection
+      window.ui.testGitHubConnection = async function() {
+        const config = {
+          token: document.getElementById('gh-token').value,
+          owner: document.getElementById('gh-owner').value,
+          repo: document.getElementById('gh-repo').value,
+          path: document.getElementById('gh-path').value,
+          branch: document.getElementById('gh-branch').value
+        };
+        window.githubSync.saveConfig(config);
+
+        try {
+          const res = await window.githubSync.testConnection();
+          window.ui.showToast(`Connected to ${res.repoName}!`, 'success');
+        } catch (err) {
+          window.ui.showToast(err.message, 'error');
+        }
+      };
+
+      // Initial Render
+      window.app.render();
+
+      // Auto-pull from GitHub on startup if configured
+      if (window.githubSync.isConfigured()) {
+        window.app.syncWithGitHub(false);
+      }
+    });
+  </script>
+</body>
+</html>
