@@ -74,7 +74,8 @@
       "description": "Manage books, issue and return records, and student borrowing history digitally.",
       "status": "Completed",
       "createdAt": "2026-08-01T11:15:00Z",
-      "updatedAt": "2026-08-02T16:30:00Z"
+      "updatedAt": "2026-08-02T16:30:00Z",
+      "isFavorite": true
     },
     {
       "id": "idea-008",
@@ -85,5 +86,5 @@
       "updatedAt": "2026-08-06T07:45:00Z"
     }
   ],
-  "lastSynced": "2026-08-07T10:54:28.813Z"
+  "lastSynced": "2026-08-07T12:18:11.007Z"
 }
