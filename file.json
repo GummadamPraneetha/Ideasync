@@ -16,7 +16,8 @@
       "description": "sdfghijklkjhgfdsdfyujnb vfdtyhbnjbgfghb vftfdcvbn",
       "status": "New",
       "createdAt": "2026-08-06T12:45:40.298Z",
-      "updatedAt": "2026-08-06T12:45:40.298Z"
+      "updatedAt": "2026-08-06T12:45:40.298Z",
+      "isFavorite": true
     },
     {
       "id": "idea-001",
@@ -83,5 +84,5 @@
       "updatedAt": "2026-08-06T07:45:00Z"
     }
   ],
-  "lastSynced": "2026-08-07T08:44:12.162Z"
+  "lastSynced": "2026-08-07T10:28:01.591Z"
 }
