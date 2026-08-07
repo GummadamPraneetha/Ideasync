@@ -3,6 +3,14 @@
   "lastUpdated": "2026-08-06T16:00:00Z",
   "ideas": [
     {
+      "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
+      "title": "Tree",
+      "description": "New idea",
+      "status": "New",
+      "createdAt": "2026-08-07T08:37:24.149Z",
+      "updatedAt": "2026-08-07T08:37:24.149Z"
+    },
+    {
       "id": "433c9edd",
       "title": "birthday planning",
       "description": "sdfghijklkjhgfdsdfyujnb vfdtyhbnjbgfghb vftfdcvbn",
@@ -75,5 +83,5 @@
       "updatedAt": "2026-08-06T07:45:00Z"
     }
   ],
-  "lastSynced": "2026-08-06T14:41:51.610Z"
+  "lastSynced": "2026-08-07T08:37:24.149Z"
 }
