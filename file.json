@@ -4,11 +4,12 @@
   "ideas": [
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
-      "title": "Tree",
+      "title": "Thi",
       "description": "New idea\n\nHi tree from klug",
       "status": "New",
+      "isFavorite": false,
       "createdAt": "2026-08-07T08:37:24.149Z",
-      "updatedAt": "2026-08-07T08:44:12.162Z"
+      "updatedAt": "2026-08-07T10:54:28.813Z"
     },
     {
       "id": "433c9edd",
@@ -84,5 +85,5 @@
       "updatedAt": "2026-08-06T07:45:00Z"
     }
   ],
-  "lastSynced": "2026-08-07T10:28:18.705Z"
+  "lastSynced": "2026-08-07T10:54:28.813Z"
 }
