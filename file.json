@@ -71,11 +71,11 @@
     {
       "id": "idea-007",
       "title": "Library Management System",
-      "description": "Manage books, issue and return records, and student borrowing history digitally.",
+      "description": "Manage books, issue and return records, and student borrowing history digitally.\n\nCheck this",
       "status": "Completed",
+      "isFavorite": true,
       "createdAt": "2026-08-01T11:15:00Z",
-      "updatedAt": "2026-08-02T16:30:00Z",
-      "isFavorite": true
+      "updatedAt": "2026-08-07T12:22:30.473Z"
     },
     {
       "id": "idea-008",
@@ -86,5 +86,5 @@
       "updatedAt": "2026-08-06T07:45:00Z"
     }
   ],
-  "lastSynced": "2026-08-07T12:18:11.007Z"
+  "lastSynced": "2026-08-07T12:22:30.473Z"
 }
