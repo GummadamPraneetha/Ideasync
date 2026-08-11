@@ -1,7 +1,7 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-11T05:21:33.740Z",
+  "lastSynced": "2026-08-11T05:21:59.361Z",
   "ideas": [
     {
       "id": "idea-001",
@@ -10,7 +10,7 @@
       "status": "Archived",
       "isFavorite": false,
       "createdAt": "2026-08-06T13:00:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-006",
@@ -19,7 +19,7 @@
       "status": "Archived",
       "isFavorite": false,
       "createdAt": "2026-08-03T08:00:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
@@ -28,7 +28,7 @@
       "status": "Archived",
       "isFavorite": false,
       "createdAt": "2026-08-07T08:37:24.149Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "433c9edd",
@@ -36,7 +36,7 @@
       "description": "sdfghijklkjhgfdsdfyujnb vfdtyhbnjbgfghb vftfdcvbn",
       "status": "Archived",
       "createdAt": "2026-08-06T12:45:40.298Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z",
+      "updatedAt": "2026-08-11T05:21:59.361Z",
       "isFavorite": false
     },
     {
@@ -45,7 +45,7 @@
       "description": "Track daily expenses by scanning bills using OCR and generate monthly spending reports.",
       "status": "Archived",
       "createdAt": "2026-08-05T10:00:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-003",
@@ -53,7 +53,7 @@
       "description": "Use face recognition to automatically mark attendance for students and employees.",
       "status": "Archived",
       "createdAt": "2026-08-06T09:30:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-004",
@@ -61,7 +61,7 @@
       "description": "Identify crop diseases from leaf images using machine learning and recommend suitable treatments.",
       "status": "Archived",
       "createdAt": "2026-08-04T14:20:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-005",
@@ -69,7 +69,7 @@
       "description": "A web and mobile application that allows users to capture ideas anytime and automatically synchronize them using a shared JSON file without a custom backend.",
       "status": "Archived",
       "createdAt": "2026-08-06T12:00:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-007",
@@ -78,7 +78,7 @@
       "status": "Archived",
       "isFavorite": true,
       "createdAt": "2026-08-01T11:15:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "idea-008",
@@ -86,7 +86,7 @@
       "description": "Help users locate available parking spaces in real time using IoT sensors.",
       "status": "Archived",
       "createdAt": "2026-08-06T07:45:00Z",
-      "updatedAt": "2026-08-11T05:21:33.740Z"
+      "updatedAt": "2026-08-11T05:21:59.361Z"
     }
   ]
 }
