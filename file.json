@@ -1,16 +1,16 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-11T05:21:59.361Z",
+  "lastSynced": "2026-08-11T05:22:04.449Z",
   "ideas": [
     {
       "id": "idea-001",
       "title": "AI Crime Detection",
       "description": "Detect suspicious human movement using AI and automatically alert the nearest police station with the location and captured evidence.",
-      "status": "Archived",
+      "status": "In Progress",
       "isFavorite": false,
       "createdAt": "2026-08-06T13:00:00Z",
-      "updatedAt": "2026-08-11T05:21:59.361Z"
+      "updatedAt": "2026-08-11T05:22:04.449Z"
     },
     {
       "id": "idea-006",
