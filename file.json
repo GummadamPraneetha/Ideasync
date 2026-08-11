@@ -1,16 +1,16 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-11T05:22:40.902Z",
+  "lastSynced": "2026-08-11T05:22:47.280Z",
   "ideas": [
     {
       "id": "idea-005",
       "title": "IdeaSync",
       "description": "A web and mobile application that allows users to capture ideas anytime and automatically synchronize them using a shared JSON file without a custom backend.",
-      "status": "Archived",
+      "status": "Completed",
       "isFavorite": false,
       "createdAt": "2026-08-06T12:00:00Z",
-      "updatedAt": "2026-08-11T05:22:40.902Z"
+      "updatedAt": "2026-08-11T05:22:47.280Z"
     },
     {
       "id": "idea-006",
