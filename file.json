@@ -1,8 +1,17 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-11T05:22:04.449Z",
+  "lastSynced": "2026-08-11T05:22:24.095Z",
   "ideas": [
+    {
+      "id": "idea-006",
+      "title": "Personal Health Reminder",
+      "description": "Remind users to take medicines, drink water, and complete daily health activities.\nYriejtf",
+      "status": "Completed",
+      "isFavorite": false,
+      "createdAt": "2026-08-03T08:00:00Z",
+      "updatedAt": "2026-08-11T05:22:24.095Z"
+    },
     {
       "id": "idea-001",
       "title": "AI Crime Detection",
@@ -11,15 +20,6 @@
       "isFavorite": false,
       "createdAt": "2026-08-06T13:00:00Z",
       "updatedAt": "2026-08-11T05:22:04.449Z"
-    },
-    {
-      "id": "idea-006",
-      "title": "Personal Health Reminder",
-      "description": "Remind users to take medicines, drink water, and complete daily health activities.\nYriejtf",
-      "status": "Archived",
-      "isFavorite": false,
-      "createdAt": "2026-08-03T08:00:00Z",
-      "updatedAt": "2026-08-11T05:21:59.361Z"
     },
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
