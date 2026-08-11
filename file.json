@@ -1,19 +1,19 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-11T11:59:38.226Z",
+  "lastSynced": "2026-08-11T12:00:35.774Z",
   "ideas": [
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
-      "description": "- [ ] edit page is opening only when I click on the text\n- [ ] app icon\n- [ ] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n- [ ] bigger checkboxes\n- [ ] by default opening preview",
+      "description": "- [x] edit page is opening only when I click on the text\n- [ ] app icon\n- [ ] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n- [ ] bigger checkboxes\n- [ ] by default opening preview",
       "status": "In Progress",
       "isFavorite": false,
       "imageUrls": [
         "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg"
       ],
       "createdAt": "2026-08-11T11:56:47.869Z",
-      "updatedAt": "2026-08-11T11:59:38.226Z"
+      "updatedAt": "2026-08-11T12:00:35.774Z"
     },
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
