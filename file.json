@@ -1,7 +1,7 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-15T09:04:33.701Z",
+  "lastSynced": "2026-08-15T09:08:53.128Z",
   "ideas": [
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
@@ -46,9 +46,9 @@
       "id": "idea-002",
       "title": "Expense Tracker",
       "description": "Track daily expenses by scanning bills using OCR and generate monthly spending reports.",
-      "status": "Completed",
+      "status": "On Hold",
       "createdAt": "2026-08-05T10:00:00Z",
-      "updatedAt": "2026-08-14T17:54:29.841Z"
+      "updatedAt": "2026-08-15T09:08:52.526Z"
     },
     {
       "id": "idea-003",
