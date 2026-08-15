@@ -1,19 +1,19 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-15T08:50:32.536Z",
+  "lastSynced": "2026-08-15T08:53:24.705Z",
   "ideas": [
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
       "description": "- [ ] edit page is opening only when I click on the text\n- [ ] app icon\n- [ ] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n- [ ] bigger checkboxes\n- [ ] by default opening preview\n- [ ] when I click check in the box show the remaining boxes",
-      "status": "Completed",
+      "status": "In Progress",
       "isFavorite": true,
       "imageUrls": [
         "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg"
       ],
       "createdAt": "2026-08-11T11:56:47.869Z",
-      "updatedAt": "2026-08-14T17:57:12.450Z",
+      "updatedAt": "2026-08-15T08:52:25.730Z",
       "starred": false,
       "dueDate": ""
     },
@@ -38,9 +38,9 @@
       "id": "idea-001",
       "title": "AI Crime Detection",
       "description": "Detect suspicious human movement using AI and automatically alert the nearest police station with the location and captured evidence.",
-      "status": "In Progress",
+      "status": "Completed",
       "createdAt": "2026-08-06T13:00:00Z",
-      "updatedAt": "2026-08-06T15:45:00Z"
+      "updatedAt": "2026-08-15T08:51:09.210Z"
     },
     {
       "id": "idea-002",
@@ -70,9 +70,9 @@
       "id": "idea-005",
       "title": "IdeaSync",
       "description": "A web and mobile application that allows users to capture ideas anytime and automatically synchronize them using a shared JSON file without a custom backend.",
-      "status": "In Progress",
+      "status": "On Hold",
       "createdAt": "2026-08-06T12:00:00Z",
-      "updatedAt": "2026-08-06T15:30:00Z"
+      "updatedAt": "2026-08-15T08:51:21.679Z"
     },
     {
       "id": "idea-006",
@@ -94,9 +94,9 @@
       "id": "idea-008",
       "title": "Smart Parking Finder",
       "description": "Help users locate available parking spaces in real time using IoT sensors.",
-      "status": "Completed",
+      "status": "In Progress",
       "createdAt": "2026-08-06T07:45:00Z",
-      "updatedAt": "2026-08-14T17:56:25.126Z"
+      "updatedAt": "2026-08-15T08:51:29.514Z"
     }
   ]
 }
