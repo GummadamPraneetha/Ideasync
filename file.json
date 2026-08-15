@@ -1,7 +1,7 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-15T09:08:53.128Z",
+  "lastSynced": "2026-08-15T09:08:54.675Z",
   "ideas": [
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
@@ -62,9 +62,9 @@
       "id": "idea-004",
       "title": "Crop Disease Detection",
       "description": "Identify crop diseases from leaf images using machine learning and recommend suitable treatments.",
-      "status": "On Hold",
+      "status": "Completed",
       "createdAt": "2026-08-04T14:20:00Z",
-      "updatedAt": "2026-08-14T17:55:23.810Z"
+      "updatedAt": "2026-08-15T09:08:54.073Z"
     },
     {
       "id": "idea-005",
