@@ -1,19 +1,21 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-14T16:27:45.933Z",
+  "lastSynced": "2026-08-15T08:50:32.536Z",
   "ideas": [
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
       "description": "- [ ] edit page is opening only when I click on the text\n- [ ] app icon\n- [ ] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n- [ ] bigger checkboxes\n- [ ] by default opening preview\n- [ ] when I click check in the box show the remaining boxes",
-      "status": "In Progress",
+      "status": "Completed",
       "isFavorite": true,
       "imageUrls": [
         "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg"
       ],
       "createdAt": "2026-08-11T11:56:47.869Z",
-      "updatedAt": "2026-08-11T12:18:25.919Z"
+      "updatedAt": "2026-08-14T17:57:12.450Z",
+      "starred": false,
+      "dueDate": ""
     },
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
@@ -46,7 +48,7 @@
       "description": "Track daily expenses by scanning bills using OCR and generate monthly spending reports.",
       "status": "Completed",
       "createdAt": "2026-08-05T10:00:00Z",
-      "updatedAt": "2026-08-05T18:00:00Z"
+      "updatedAt": "2026-08-14T17:54:29.841Z"
     },
     {
       "id": "idea-003",
@@ -62,7 +64,7 @@
       "description": "Identify crop diseases from leaf images using machine learning and recommend suitable treatments.",
       "status": "On Hold",
       "createdAt": "2026-08-04T14:20:00Z",
-      "updatedAt": "2026-08-06T11:00:00Z"
+      "updatedAt": "2026-08-14T17:55:23.810Z"
     },
     {
       "id": "idea-005",
@@ -76,25 +78,25 @@
       "id": "idea-006",
       "title": "Personal Health Reminder",
       "description": "Remind users to take medicines, drink water, and complete daily health activities.",
-      "status": "New",
+      "status": "Completed",
       "createdAt": "2026-08-03T08:00:00Z",
-      "updatedAt": "2026-08-03T08:00:00Z"
+      "updatedAt": "2026-08-14T17:56:22.273Z"
     },
     {
       "id": "idea-007",
       "title": "Library Management System",
       "description": "Manage books, issue and return records, and student borrowing history digitally.",
-      "status": "Completed",
+      "status": "In Progress",
       "createdAt": "2026-08-01T11:15:00Z",
-      "updatedAt": "2026-08-02T16:30:00Z"
+      "updatedAt": "2026-08-14T17:54:31.359Z"
     },
     {
       "id": "idea-008",
       "title": "Smart Parking Finder",
       "description": "Help users locate available parking spaces in real time using IoT sensors.",
-      "status": "New",
+      "status": "Completed",
       "createdAt": "2026-08-06T07:45:00Z",
-      "updatedAt": "2026-08-06T07:45:00Z"
+      "updatedAt": "2026-08-14T17:56:25.126Z"
     }
   ]
 }
