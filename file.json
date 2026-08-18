@@ -1,8 +1,21 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-18T10:23:21.185Z",
+  "lastSynced": "2026-08-18T10:28:45.718Z",
   "ideas": [
+    {
+      "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
+      "title": "App fixes",
+      "description": "- [ ] success \n- [ ] app icon\n- [ ] edit page is opening only when I click on the text\n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n\n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_f87067d3-52e4-4302-9252-bd03338f2e64.jpg)\n\n- [ ] bigger checkboxes\n- [ ] by default opening preview\n- [ ] when I click check in the box show the remaining boxes",
+      "status": "In Progress",
+      "isFavorite": true,
+      "imageUrls": [
+        "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg",
+        "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_f87067d3-52e4-4302-9252-bd03338f2e64.jpg"
+      ],
+      "createdAt": "2026-08-11T11:56:47.869Z",
+      "updatedAt": "2026-08-18T10:28:45.718Z"
+    },
     {
       "id": "2a064bc1",
       "title": "works machine learning",
@@ -12,18 +25,6 @@
       "dueDate": "",
       "createdAt": "2026-08-18T09:09:57.058Z",
       "updatedAt": "2026-08-18T09:09:57.058Z"
-    },
-    {
-      "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
-      "title": "App fixes",
-      "description": "- [ ] success \n- [ ] app icon\n- [ ] edit page is opening only when I click on the text\n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n- [ ] bigger checkboxes\n- [ ] by default opening preview\n- [ ] when I click check in the box show the remaining boxes",
-      "status": "In Progress",
-      "isFavorite": true,
-      "imageUrls": [
-        "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg"
-      ],
-      "createdAt": "2026-08-11T11:56:47.869Z",
-      "updatedAt": "2026-08-18T10:23:21.185Z"
     },
     {
       "id": "b3abe3c8-fb36-4c6c-bd72-58301f59644a",
