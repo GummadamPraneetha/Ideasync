@@ -1,7 +1,7 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-18T11:02:25.241Z",
+  "lastSynced": "2026-08-18T11:22:57.673Z",
   "ideas": [
     {
       "id": "idea-006",
@@ -15,7 +15,7 @@
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
-      "description": "- [ ] app icon\n- [ ] edit page is opening only when I click on the text\n- [ ] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n\n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_f87067d3-52e4-4302-9252-bd03338f2e64.jpg)\n\n- [ ] when I click check in the box show the remaining boxes\n- [ ] bigger checkboxes\n- [ ] by default opening preview",
+      "description": "- [ ] app icon\n- [ ] edit page is opening only when I click on the text\n- [x] success \n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_bd675e71-3bee-4725-a5ef-c72b0c0f7d09.jpg)\n\n- [ ] font style are not working when key board is up\n\n![Image](images/ca20f7cc-3877-47ec-8ee4-d5061e278626_f87067d3-52e4-4302-9252-bd03338f2e64.jpg)\n\n- [ ] when I click check in the box show the remaining boxes\n- [ ] bigger checkboxes\n- [ ] by default opening preview",
       "status": "In Progress",
       "isFavorite": true,
       "imageUrls": [
@@ -23,7 +23,7 @@
         "images/ca20f7cc-3877-47ec-8ee4-d5061e278626_f87067d3-52e4-4302-9252-bd03338f2e64.jpg"
       ],
       "createdAt": "2026-08-11T11:56:47.869Z",
-      "updatedAt": "2026-08-18T10:30:37.906Z"
+      "updatedAt": "2026-08-18T11:22:57.673Z"
     },
     {
       "id": "2a064bc1",
