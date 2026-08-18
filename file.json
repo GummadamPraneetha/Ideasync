@@ -1,8 +1,18 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-18T09:08:39.630Z",
+  "lastSynced": "2026-08-18T09:09:57.659Z",
   "ideas": [
+    {
+      "id": "2a064bc1",
+      "title": "works machine learning",
+      "description": "project up to eda \n\nclass project up tolinear regression \n",
+      "status": "New",
+      "starred": false,
+      "dueDate": "",
+      "createdAt": "2026-08-18T09:09:57.058Z",
+      "updatedAt": "2026-08-18T09:09:57.058Z"
+    },
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
