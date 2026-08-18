@@ -1,8 +1,17 @@
 {
   "appName": "IdeaSync",
   "version": "1.0",
-  "lastSynced": "2026-08-18T10:28:45.718Z",
+  "lastSynced": "2026-08-18T10:29:28.136Z",
   "ideas": [
+    {
+      "id": "idea-006",
+      "title": "Personal Health Reminder",
+      "description": "Remind users to take medicines, drink water, and complete daily health activities.",
+      "status": "In Progress",
+      "isFavorite": false,
+      "createdAt": "2026-08-03T08:00:00Z",
+      "updatedAt": "2026-08-18T10:29:28.136Z"
+    },
     {
       "id": "ca20f7cc-3877-47ec-8ee4-d5061e278626",
       "title": "App fixes",
@@ -82,14 +91,6 @@
       "status": "On Hold",
       "createdAt": "2026-08-06T12:00:00Z",
       "updatedAt": "2026-08-15T08:51:21.679Z"
-    },
-    {
-      "id": "idea-006",
-      "title": "Personal Health Reminder",
-      "description": "Remind users to take medicines, drink water, and complete daily health activities.",
-      "status": "Completed",
-      "createdAt": "2026-08-03T08:00:00Z",
-      "updatedAt": "2026-08-14T17:56:22.273Z"
     },
     {
       "id": "idea-007",
